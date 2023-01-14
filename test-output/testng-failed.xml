@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [E2E Test Suite]" parallel="methods">
+  <test thread-count="10" name="E2E Tests(failed)" parallel="methods">
+    <classes>
+      <class name="com.bdd.runners.LoginModuleRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="1 3 0 5 4 2"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.bdd.runners.LoginModuleRunner -->
+    </classes>
+  </test> <!-- E2E Tests(failed) -->
+</suite> <!-- Failed suite [E2E Test Suite] -->

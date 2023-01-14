@@ -1,0 +1,7 @@
+com/simplilearn/SampleMaven/App.class
+pages/HomePage.class
+pages/BasePage.class
+pages/ProfilePage.class
+utils/DataUtils.class
+pages/LoginPage.class
+pages/SearchPage.class

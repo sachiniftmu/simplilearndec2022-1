@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="62033" started-at="2023-01-14T16:14:08 UTC" finished-at="2023-01-14T16:15:10 UTC">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="BDD Tests" duration-ms="62033" started-at="2023-01-14T16:14:08 UTC" finished-at="2023-01-14T16:15:10 UTC">
+      <class name="com.bdd.runners.LoginModuleRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="setUpClass" is-config="true" duration-ms="178" started-at="2023-01-14T16:14:08 UTC" finished-at="2023-01-14T16:14:08 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="runScenario" duration-ms="48503" started-at="2023-01-14T16:14:08 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-14T16:14:57 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User Login With Invalid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="runScenario" duration-ms="51191" started-at="2023-01-14T16:14:08 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-14T16:14:59 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User Login With Invalid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="runScenario" duration-ms="56023" started-at="2023-01-14T16:14:08 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-14T16:15:04 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that login is working with correct credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="runScenario" duration-ms="45249" started-at="2023-01-14T16:14:08 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-14T16:14:53 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify registration functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="runScenario" duration-ms="61712" started-at="2023-01-14T16:14:08 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-14T16:15:10 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify logout functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Profile Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="runScenario" duration-ms="45883" started-at="2023-01-14T16:14:08 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-14T16:14:54 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify User Login With Invalid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.bdd.runners.LoginModuleRunner@b52b755]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2023-01-14T16:15:10 UTC" finished-at="2023-01-14T16:15:10 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.bdd.runners.LoginModuleRunner -->
+    </test> <!-- BDD Tests -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>

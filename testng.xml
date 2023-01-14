@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="E2E Test Suite" parallel="methods">
+  <test thread-count="10" name="E2E Tests" parallel="methods">
+    <classes>
+      <class name="testcases.SearchTests"/>
+      <class name="testcases.LoginTest"/>
+      <class name="testcases.MobileTests"/>
+      <class name="testcases.BaseTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
