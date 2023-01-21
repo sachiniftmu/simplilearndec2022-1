@@ -32,8 +32,8 @@ options.addArguments("--headless");// Bypass OS security model
 				options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 				options.addArguments("-–no-sandbox");
 				options.addArguments("window-size=1200,1100");
-				webDriver.set(new ChromeDriver(options));
-				webDriver.get().manage().window().maximize();
+				driver.set(new ChromeDriver(options));
+				driver.get().manage().window().maximize();
 		driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		// launch our application
 		// driver.get().get("https://testautomasi.com");
