@@ -1,12 +1,16 @@
 package testcases;
 
-import java.time.Duration;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ProfilePage;
@@ -27,14 +31,22 @@ public abstract class BaseTest {
 	@BeforeMethod(alwaysRun = true)
 	protected void setUp() {
 		// setting up chromedriver
-			ChromeOptions options = new ChromeOptions();
-options.addArguments("--headless");// Bypass OS security model
-				options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-				options.addArguments("-–no-sandbox");
-				options.addArguments("window-size=1200,1100");
-				driver.set(new ChromeDriver(options));
-				driver.get().manage().window().maximize();
-		driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");// Bypass OS security model
+		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		options.addArguments("-–no-sandbox");
+		options.addArguments("window-size=1200,1100");
+
+		try {
+			driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options));
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		// driver.set(new ChromeDriver(options));
+		driver.get().manage().window().maximize();
+		driver.get().manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		// launch our application
 		// driver.get().get("https://testautomasi.com");
 		driver.get().get(DataUtils.getTestData("Config", "BaseUrl"));
